@@ -5,9 +5,91 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f9fafb;
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.top {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+input {
+  width: 600px;
+  padding: 0.75rem;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-bottom-color: #555;
+}
+
+.add {
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.add:hover {
+  background-color: #555;
+}
+
+.icons{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 0.5rem;
+  right: 20px;
+  color: #fff;
+}
+
+.icon{
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+
+}
+.todo{
+position: relative;
+margin-top: 1rem;
+background-color: black;
+color: #fff;
+padding: 1.5rem 3rem;
+border-radius: 6px;
+font-size: 1rem;
+transition: background-color 0.3s ease;
 }
